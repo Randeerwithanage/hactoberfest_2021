@@ -2,7 +2,7 @@
   body {
     width: 500px;
     height: 500px;
-    background-color:#000;
+    background-color:rgb(32, 63, 201);
     display: flex;
     justify-content: center;
     font-family: helvetica;

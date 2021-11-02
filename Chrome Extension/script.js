@@ -5,7 +5,9 @@ const btn = document.querySelector
 
 btn.addEventListener("click", getQuote);
 
-function getQuote(){
+function getQuote()
+
+{
     fetch("https://icanhazdadjoke.com/slack")
     .then(res => res.json())
     .then(data => {

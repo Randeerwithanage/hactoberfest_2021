@@ -1,7 +1,16 @@
-# Random jokes generator-chrome extension
+# Random jokes generator-chrome extension(RaNa)
 
-# Installation
-1. Clone this repo
-2. Open chrome browser and select Extensions menu
-3. Enable developer mode and select load unpacked option
-4. Select cloned folder.
+# Installation Steps follwing this steps corectly...............................>
+
+
+Clone this repo --------------------------------------------------->1.
+
+Open chrome browser and select Extensions menu ------------------------>2.
+
+Enable developer mode and select load unpacked option -------------------->3.
+
+Select cloned folder.-------------------------------------------------------->4.
+
+
+
+THANK YOU!!!!!!!!!!!

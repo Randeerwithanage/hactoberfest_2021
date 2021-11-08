@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace WindowsFormsApplication1
+    
 {
     public partial class csharp_calculator : Form
     {
@@ -18,7 +19,8 @@ namespace WindowsFormsApplication1
         }
 
         float num1 = 0, num2 = 0;
-        int oprClickCount = 0;
+    
+   int oprClickCount = 0;
         bool isOprClick = false, isEqualClick = false;
         string opr;
 

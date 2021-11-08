@@ -6,8 +6,10 @@ int main()
 
  {
 
+ 
   char op;
 
+ 
   double first, second;
   printf("Enter an operator (+, -, *, /): ");
   scanf("%c", &op);
@@ -16,7 +18,8 @@ int main()
 
   switch (op) 
   
-  //Computing .......>
+   
+  //Computing .......>/////
   
   {
     case '+':

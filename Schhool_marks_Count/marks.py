@@ -17,7 +17,7 @@ class Student:
         ob = Student(Name, Rollno, marks1, marks2 )
         lst.append(ob)
   
-       
+       #count
     def display(self, ob):
             print("Name   : ", ob.name)
             print("RollNo : ", ob.rollno)

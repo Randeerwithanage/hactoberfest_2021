@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="counter-div">
+        <h1 id="counter">Counter : 0 : 0 : 0 : 0</h1>
+        <button id="start">Start</button>
+        <button id="stop">Stop</button>
+        <button id="reset">Reset</button>
+    </div>
+
+</body>
+<script>
+    const ele = document.getElementById("counter");
+    let hour = 0;
+    let minute = 0;
+    let sec = 0;
+    let minSec = 0;
+    let int;
+    let start = true;
+
+    const btnstart = document.getElementById("start").addEventListener("click", () => {
+        if (start) {
+            int = setInterval(() => {
+                minSec = minSec + 1;
+                if(minSec>59){
+                    sec++;
+                    minSec = 0;
+                }
+                if(sec>59){
+                    minute++;
+                    sec = 0;
+                }
+                if(minute>59){
+                    hour++;
+                    minute = 0;
+                }
+                ele.innerText = `Counter : ${hour} : ${minute} : ${sec} : ${minSec}`
+            }, 10);
+
+            start = false;
+        }
+    })
+    const btnstop = document.getElementById("stop").addEventListener("click", () => {
+        clearInterval(int);
+        start = true;
+    })
+
+    const btnReset = document.getElementById("reset").addEventListener("click", () => {
+            clearInterval(int);
+            sec = 0;
+            minute = 0;
+            hour = 0;
+            start = true;
+            ele.innerHTML = `Counter : 0 : 0 : 0 : 0`
+        }
+    )
+</script>
+
+</html>

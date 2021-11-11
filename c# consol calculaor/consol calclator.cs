@@ -9,7 +9,6 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace WindowsFormsApplication1
-    
 {
     public partial class csharp_calculator : Form
     {
@@ -19,8 +18,7 @@ namespace WindowsFormsApplication1
         }
 
         float num1 = 0, num2 = 0;
-    
-   int oprClickCount = 0;
+        int oprClickCount = 0;
         bool isOprClick = false, isEqualClick = false;
         string opr;
 
@@ -57,7 +55,7 @@ namespace WindowsFormsApplication1
                     {
                         // delete the first "0"
                         // set button text to the textbox
-                       
+                        // if the button text is not "."
                         textBox1.Text = button.Text;
                         isOprClick = false;
                     }

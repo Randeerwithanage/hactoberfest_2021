@@ -1,8 +1,17 @@
 {
-    "configurations": [
+    "configurations": 
+    
+    
+    
+    
+    
+    [
         {
             "name": "Win32",
-            "includePath": [
+            "includePath":
+            
+            
+            [
                 "${workspaceFolder}/**"
             ],
             "defines": [
@@ -14,6 +23,8 @@
             "cppStandard": "c++17",
             "intelliSenseMode": "windows-msvc-x64"
         }
+        
+        
     ],
     "version": 4
 }

@@ -9,6 +9,7 @@
 // of length N
 void randomPasswordGeneration(int N)
 {
+	
 	// Initialize counter
 	int i = 0;
 
@@ -16,7 +17,7 @@ void randomPasswordGeneration(int N)
 
 	// Seed the random-number generator
 	// with current time so that the
-	// numbers will be different every time
+	                                     // numbers will be different every time
 	srand((unsigned int)(time(NULL)));
 
 	// Array of numbers
@@ -41,17 +42,23 @@ void randomPasswordGeneration(int N)
 	// Iterate over the range [0, N]
 	for (i = 0; i < N; i++) {
 
-		if (randomizer == 1) {
+		
+		if
+			 (randomizer == 1) 
+		
+		{
 			password[i] = numbers[rand() % 10];
 			randomizer = rand() % 4;
 			printf("%c", password[i]);
 		}
-		else if (randomizer == 2) {
+		else if (randomizer == 2)
+		{
 			password[i] = symbols[rand() % 8];
 			randomizer = rand() % 4;
 			printf("%c", password[i]);
 		}
-		else if (randomizer == 3) {
+		else if (randomizer == 3) 
+		{
 			password[i] = LETTER[rand() % 26];
 			randomizer = rand() % 4;
 			printf("%c", password[i]);
